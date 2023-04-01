@@ -10,17 +10,23 @@
 </head>
 
 <body>
-    <main>
-        <input type="text" placeholder="Enter text" id="text">
+    <footer>
+        Created by <a href="https://zil.ink/keyti_front">KEYTI</a> team
+    </footer>
+    <center>
+        <main>
+            <input type="text" placeholder="Please Enter text" id="myInput">
 
-        <div class="tooltip">
-            <div class="copy" onclick="copyText()"> Copy </div>
-            <span class="tooltiptext">CopyText:</span>
-        </div>
-        <!-- <div class="tooltip">copyText
-            <button class="tooltiptext tooltip-right" onclick="copyText()">Copy text</button>
-        </div> -->
-    </main>
+            <div class="tooltip">
+                <button onclick="copy()" onmouseout="outFunc()">
+                    <span class="tooltiptext" id="myTooltip">Copy Text</span>
+                    Copy text
+                </button>
+            </div>
+        </main>
+    </center>
+    <script src="app.js"></script>
+
 </body>
 
 </html>
