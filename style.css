@@ -19,8 +19,8 @@ main {
 }
 
 main input {
-    width: 70%;
-    height: 25px;
+    width: 65%;
+    height: 30px;
     border-radius: 50px;
     border: none;
     outline: none;
@@ -29,12 +29,14 @@ main input {
     text-align: center;
 }
 
-main button {
-    width: 30%;
-    height: 35px;
+main .tooltip{
+    position: relative;
+    display: inline-block;
+    width: 35%;
+    height: 25px;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    background: #fff;
+    color: #808080;
     border: none;
     outline: none;
     border-radius: 50px;
@@ -44,40 +46,31 @@ main button {
     transition: all .5s;
 }
 
-.tooltip {
-    position: relative;
-    display: inline-block;
-}
-
 .tooltip .tooltiptext {
     visibility: hidden;
-    width: 140px;
-    background-color: #555;
+    width: 120px;
+    background-color: black;
     color: #fff;
     text-align: center;
     border-radius: 6px;
     padding: 5px;
     position: absolute;
     z-index: 1;
-    bottom: 150%;
-    left: 50%;
-    margin-left: -75px;
-    opacity: 0;
-    transition: opacity 0.3s;
+    top: 0;
+    left: 110%;
 }
 
 .tooltip .tooltiptext::after {
     content: "";
     position: absolute;
-    top: 100%;
-    left: 50%;
-    margin-left: -5px;
+    top: 50%;
+    right: 100%;
+    margin-top: -5px;
     border-width: 5px;
     border-style: solid;
-    border-color: #555 transparent transparent transparent;
+    border-color: transparent black transparent transparent;
 }
 
 .tooltip:hover .tooltiptext {
     visibility: visible;
-    opacity: 1;
 }

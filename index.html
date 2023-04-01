@@ -5,13 +5,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Copy Text</title>
 </head>
 
 <body>
-    <input type="text" placeholder="Enter text" id="text">
+    <main>
+        <input type="text" placeholder="Enter text" id="text">
 
-    <button onclick="copyText()">Copy text</button>
+        <div class="tooltip">
+            <div class="copy" onclick="copyText()"> Copy </div>
+            <span class="tooltiptext">CopyText:</span>
+        </div>
+        <!-- <div class="tooltip">copyText
+            <button class="tooltiptext tooltip-right" onclick="copyText()">Copy text</button>
+        </div> -->
+    </main>
 </body>
 
 </html>
